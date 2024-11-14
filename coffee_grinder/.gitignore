@@ -1,0 +1,5 @@
+build/
+dist/
+coffee_grinder.egg-info/
+coffee_grinder.c
+coffee_grinder.*.so
