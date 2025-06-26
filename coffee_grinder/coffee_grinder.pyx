@@ -131,7 +131,7 @@ cdef DCTCoeffs read_dct(stream):
         coeff = <int32_t> (view2[0 + i * 4] | \
                 (view2[1 + i * 4] << 8) | \
                 (view2[2 + i * 4] << 16) | \
-                (view2[3] << 24))
+                (view2[3 + i * 4] << 24))
         #coeff, = unpack('<i', read(4))
         coeffs[i] = coeff
 
